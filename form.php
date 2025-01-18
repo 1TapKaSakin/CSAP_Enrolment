@@ -24,7 +24,7 @@
 
     if($rs){
         echo'<script>alert("You are enrolled. We will message you for the schedule on enrollment.")</script>';
-        header("Location: ../Babythesis/Enrollment.html");
+        header("https://1tapkasakin.github.io/CSAP_Enrolment/Enrollment.html");
     }
         
 ?>
