@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta new="viewport" content="width=device-width, initial-scale=1">
+
+        <title>CSAP Online Enrollment</title>
+        <style>
+
+        body {
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 50% 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        label{
+            text-align: left;
+            width: 100px;
+            display: inline-block;
+            margin: 0px 10px;
+        }
+
+        #form {  
+            background-color: #8b0505e3;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            max-width: 420px;
+            height: 411px;
+            margin: auto;
+        }
+
+        h2{
+            text-align: center;
+            color:white;
+            border-radius: 10px;
+            height: 35px;
+            width: 420px;
+            margin: 0px auto;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);;
+        }
+        
+        form input[type="text"], form input[type="number"], form input[type="date"], form select{
+            width: 70%;
+            padding: 7px;
+            margin: 10px 0px;
+            border-radius: 8px;
+            max-width: 250px;
+            border: 2px solid #8a8484e0;
+        }
+
+        input[type="submit"]{
+            width: 70%;
+            padding: 7px;
+            margin: 5px 104px;
+            border-radius: 8px;
+            max-width: 250px;
+            border: 2px solid #8a8484e0;
+        }
+
+        form input[type="file"]{
+            color:white; 
+            width: 180px; 
+            margin-top: 10px;
+        }
+
+        </style>
+        
+    </head>
+
+    <body background="csap logo.jpg">
+        <br></br>
+        <br></br>
+        <br>
+    <div id="form">
+        <h2>
+            <FreshManHeadTitle>
+                <b>College Freshman Enrollment</b>
+            </FreshManHeadTitle><br></br>
+        </h2>
+
+        <form method="POST" action="form.php" >
+            <label for="FName" style="color:white;" ><b>First Name: </b></label> 
+            <input type="text" id="FName" name="FName" required><br>
+
+            <label for="LName" style="color:white"><b>Last Name: </b></label> 
+            <input type="text" id="LName" name="LName" required><br>
+
+            <label style="color:white"><b>Gender: </b></label> 
+            
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label style="color:white">Male</label> 
+            
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label style="color:white">Female</label> <br>
+
+            <label for="birthday" style="color:white"><b>Birthday: </b></label> 
+            <input type="date" id="birthday" name="birthday" required><br>
+
+            <label for="address" style="color:white"><b>Address: </b></label> 
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="nso" style="color:white"><b>NSO/Birth Certificate: </b></label> 
+            <input type="file" id="nso" name="nso" accept="image/*" required><br></br>
+        
+            <label style="color:white"><b>Course: </b></label> 
+            <select name="course" required>
+                <option value=""></option>
+                <option value="bsis">BSIS</option>
+                <option value="nursing">NURSING</option>
+            </section><br></br>
+
+        </form>
+
+        <input type="submit" name="enroll" value="Enroll" style="color: black";>
+        
+    </div>
+    </body>
+</html>
+
